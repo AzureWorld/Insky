@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cmdb',
+    'cmdb.templatetags.custom_markdown',
 ]
 # from django.conf import global_settings
 # BOOTSTRAP_ADMIN_SIDEBAR_MENU = True
@@ -80,7 +81,7 @@ WSGI_APPLICATION = 'Insky.wsgi.application'
 DATABASES = {
     'default':{
         'ENGINE':'django.db.backends.mysql',
-        'NAME':'sanbase',
+        'NAME':'skyblog',
         'USER':'root',
         'PASSWORD':'xzwlqj',
         'HOST':'192.168.3.8',

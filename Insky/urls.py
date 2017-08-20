@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/', views.index),
     url(r'^test/',views.test),
-    url(r'^$',views.home),
+    url(r'^$',views.home, name = 'home'),
+    url(r'^(?P<id>\d+)/$', views.detail, name='detail'),
 ]
